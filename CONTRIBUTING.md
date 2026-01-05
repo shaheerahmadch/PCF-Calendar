@@ -1,6 +1,6 @@
 # Contributing
 
-Thank you for your interest in contributing to the **AttachmentControl** component! We welcome your help to improve this project.
+Thank you for your interest in contributing to the **Calendar** component! We welcome your help to improve this project.
 
 ## How to Contribute
 

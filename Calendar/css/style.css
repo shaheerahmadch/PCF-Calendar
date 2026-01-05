@@ -1,0 +1,86 @@
+.calendar {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 1rem;
+}
+
+.calendar-day {
+    height: auto;
+    border-radius: 0.5rem;
+    min-height: 120px;
+    position: relative;
+}
+.event {
+    text-align: left; /* Ensure text is left-aligned */
+}
+
+.calendar-day {
+    text-align: left; /* Ensure the calendar day text is left-aligned */
+}
+.event {
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    border-radius: 0.25rem;
+    color: white;
+    font-size: 0.875rem;
+    word-break: break-word;
+    position: relative;
+    cursor: pointer;
+}
+
+.events-container {
+    margin-top: 0.5rem;
+}
+
+.max-w-xl {
+    max-width: none !important;
+}
+
+/* Popup styling */
+.event-popup {
+    display: none;
+    position: absolute;
+    bottom: 110%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 0.75rem;
+    background-color: rgba(0, 0, 0, 0.75);
+    color: white;
+    border-radius: 0.25rem;
+    white-space: nowrap;
+    font-size: 0.75rem;
+    z-index: 100;
+    width: 200px;
+}
+
+.event-popup h4 {
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.event-popup p {
+    margin: 0.25rem 0;
+}
+
+.event:hover .event-popup {
+    display: block;
+}
+
+.calendar-day.bg-white.shadow-md.p-4.relative {
+    min-height: 0px !important;
+    min-width: 5rem;
+}
+.custom-nowrap{
+    white-space: normal;
+}
+.customControl.Canvasify.Calendar.Canvasify\.Calendar {
+    overflow-y: hidden;
+    overflow-x: hidden;    
+    padding: 10px;
+}
+.calendarContainerCustom {
+    max-height: calc(100% - 60px);
+    overflow-y: auto;
+    overflow-x: hidden;
+}

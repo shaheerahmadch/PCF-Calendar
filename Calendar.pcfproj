@@ -8,8 +8,8 @@
   <Import Project="$(PowerAppsTargetsPath)\Microsoft.PowerApps.VisualStudio.Pcf.props" Condition="Exists('$(PowerAppsTargetsPath)\Microsoft.PowerApps.VisualStudio.Pcf.props')" />
 
   <PropertyGroup>
-    <Name>AttachmentControl</Name>
-    <ProjectGuid>573ca024-fb7c-4975-bfee-b0f001ef6755</ProjectGuid>
+    <Name>Calendar</Name>
+    <ProjectGuid>1e9e354e-3829-411c-b6ee-09f357edb567</ProjectGuid>
     <OutputPath>$(MSBuildThisFileDirectory)out\controls</OutputPath>
   </PropertyGroup>
 

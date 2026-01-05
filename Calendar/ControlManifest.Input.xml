@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <manifest>
-  <control namespace="Canvasfy" constructor="AttachmentControl" version="0.0.1008" display-name-key="AttachmentControl" description-key="AttachmentControl description" control-type="standard" >
+  <control namespace="Canvasify" constructor="Calendar" version="0.0.193" display-name-key="Calendar" description-key="Calendar description" control-type="standard" >
     <!--external-service-usage node declares whether this 3rd party PCF control is using external service or not, if yes, this control will be considered as premium and please also add the external domain it is using.
     If it is not using any external service, please set the enabled="false" and DO NOT add any domain below. The "enabled" will be false by default.
     Example1:
@@ -18,9 +18,11 @@
       -->
     </external-service-usage>
     <!-- property node identifies a specific, configurable piece of data that the control expects from CDS -->
-     <property name="files" display-name-key="files" description-key="files" of-type="Multiple" usage="bound" required="true" />
-     <property name="enableList" display-name-key="enableList" description-key="enableList" of-type="TwoOptions" usage="bound" required="true" />
-     <!-- <property name="enableList" display-name-key="enableList" description-key="enableList" of-type="Boolean" usage="bound" required="true" /> -->
+  <property name="calendarData" display-name-key="Calendar Data" description-key="Calendar Data" of-type="Object" usage="input" required="true" />
+  <property name="calendarDate" display-name-key="Calendar Date" description-key="Calendar Date" of-type="SingleLine.Text" usage="input" required="true" />
+  <property name="dateTextColor" display-name-key="Date Text Color" description-key="Date Text Color" of-type="SingleLine.Text" usage="input" required="true" />
+  <property name="dateBackgroundColor" display-name-key="Date Background Color" description-key="Date Background Color" of-type="SingleLine.Text" usage="input" required="true" />
+  <property name="updatedData" display-name-key="Updated Data" description-key="CalUpdatedendar Date" of-type="SingleLine.Text" usage="output" required="true" />
     <!--
       Property node's of-type attribute can be of-type-group attribute.
       Example:
@@ -34,9 +36,9 @@
     -->
     <resources>
       <code path="index.ts" order="1"/>
-       <!-- UNCOMMENT TO ADD MORE RESOURCES -->
-      <css path="css/AttachmentControl.css" order="1" />
-      <!--<resx path="strings/AttachmentControl.1033.resx" version="1.0.0" />
+      <!-- UNCOMMENT TO ADD MORE RESOURCES
+      <css path="css/Calendar.css" order="1" />
+      <resx path="strings/Calendar.1033.resx" version="1.0.0" />
       -->
     </resources>
     <!-- UNCOMMENT TO ENABLE THE SPECIFIED API
